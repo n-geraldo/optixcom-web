@@ -27,6 +27,7 @@ a:hover{text-decoration:underline}
 .hero__content p{color:var(--muted);max-width:60ch;margin:0 0 1rem}
 .hero__actions{display:flex;gap:.8rem;margin-top:.8rem}
 .hero__media{border-radius:1rem;overflow:hidden;border:1px solid #1b2635;box-shadow:var(--shadow)}
+#map{min-height:20rem}
 
 section{padding:2.8rem 1.2rem;max-width:1100px;margin:auto}
 h2{font-size:1.6rem;margin:0 0 1rem}
