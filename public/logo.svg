@@ -1,5 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
-  <rect width="180" height="180" rx="28" fill="#101b2a"/>
-  <path d="M40 115 L90 35 L140 115" stroke="#62e0ff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="90" cy="115" r="14" fill="#94ffce"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff4d5a"/>
+      <stop offset="100%" stop-color="#8a3be2"/>
+    </linearGradient>
+  </defs>
+  <circle cx="60" cy="60" r="40" fill="none" stroke="url(#grad)" stroke-width="6"/>
+  <circle cx="60" cy="20" r="6" fill="url(#grad)"/>
+  <circle cx="95" cy="45" r="6" fill="url(#grad)"/>
+  <circle cx="95" cy="75" r="6" fill="url(#grad)"/>
+  <circle cx="60" cy="100" r="6" fill="url(#grad)"/>
+  <circle cx="25" cy="75" r="6" fill="url(#grad)"/>
+  <circle cx="25" cy="45" r="6" fill="url(#grad)"/>
+  <line x1="60" y1="20" x2="95" y2="45" stroke="url(#grad)" stroke-width="4"/>
+  <line x1="95" y1="45" x2="95" y2="75" stroke="url(#grad)" stroke-width="4"/>
+  <line x1="95" y1="75" x2="60" y2="100" stroke="url(#grad)" stroke-width="4"/>
+  <line x1="60" y1="100" x2="25" y2="75" stroke="url(#grad)" stroke-width="4"/>
+  <line x1="25" y1="75" x2="25" y2="45" stroke="url(#grad)" stroke-width="4"/>
+  <line x1="25" y1="45" x2="60" y2="20" stroke="url(#grad)" stroke-width="4"/>
 </svg>
