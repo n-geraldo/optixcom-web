@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: '/public/Red%20Network%20Globe.json'
+      path: '/public/Red Network Globe.json'
     });
   }
 });
