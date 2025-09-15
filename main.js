@@ -40,4 +40,16 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // hero lottie animation
+  const heroAnim = document.getElementById('heroAnim');
+  if (heroAnim && window.lottie) {
+    window.lottie.loadAnimation({
+      container: heroAnim,
+      renderer: 'svg',
+      loop: true,
+      autoplay: true,
+      path: '/public/Red%20Network%20Globe.json'
+    });
+  }
 });
