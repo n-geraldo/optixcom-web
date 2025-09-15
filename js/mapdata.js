@@ -18,7 +18,7 @@ var simplemaps_countrymap_mapdata={
     //Location defaults
     location_description: "Location description",
     location_url: "",
-    location_color: "#4767ff",
+    location_color: "#e5007d",
     location_opacity: 0.8,
     location_hover_opacity: 1,
     location_size: 25,
@@ -116,6 +116,11 @@ var simplemaps_countrymap_mapdata={
       name: "Tirana",
       lat: "41.3275",
       lng: "19.818889"
+    },
+    "1": {
+      name: "Prizren",
+      lat: "42.2153",
+      lng: "20.7413"
     }
   },
   labels: {
