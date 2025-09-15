@@ -5,10 +5,11 @@
   <title>Contact — Optixcom</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/styles.css">
+  <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
 </head>
 <body>
 <header class="site-header">
-  <a class="brand" href="/"><img src="/public/logo.svg" alt="" class="logo"> Optixcom</a>
+  <a class="brand" href="/"><img src="/public/logo.svg" alt="" class="logo"><span class="brand__name">Optixcom</span></a>
   <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
   <nav class="site-nav" data-nav>
     <a href="/">Home</a><a href="/about.html">About</a><a href="/services.html">Services</a><a class="cta active" href="/contact.html">Contact</a>
@@ -17,6 +18,16 @@
 
 <main class="page">
   <h1>Contact us</h1>
+  <div class="locations">
+    <div>
+      <h2>Tirana – Albania</h2>
+      <p>Rruga Durresit<br>Zip: 1001<br>Phone: <a href="tel:0038349229997">0038349229997</a><br>Email: <a href="mailto:info@optixcom.net">info@optixcom.net</a></p>
+    </div>
+    <div>
+      <h2>Prizren – Kosovo</h2>
+      <p>Bazhdarhane Pn<br>Zip: 20000<br>Phone: <a href="tel:0038349229997">0038349229997</a><br>Email: <a href="mailto:info@optixcom.net">info@optixcom.net</a></p>
+    </div>
+  </div>
   <form id="contactForm" class="form" method="post" action="/api/contact">
     <div class="field">
       <label for="name">Name*</label>
