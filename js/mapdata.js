@@ -116,6 +116,11 @@ var simplemaps_countrymap_mapdata={
       name: "Tirana",
       lat: "41.3275",
       lng: "19.818889"
+    },
+    "1": {
+      name: "Prizren",
+      lat: "42.2153",
+      lng: "20.7413"
     }
   },
   labels: {
