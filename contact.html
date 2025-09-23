@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/styles.css">
   <link rel="icon" href="/public/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js" defer></script>
 </head>
 <body>
@@ -29,6 +30,11 @@
       <p>Bazhdarhane Pn<br>Zip: 20000<br>Phone: <a href="tel:0038349229997">0038349229997</a><br>Email: <a href="mailto:info@optixcom.net">info@optixcom.net</a></p>
     </div>
   </div>
+  <section class="map-section" aria-label="Map of Optixcom locations in Europe">
+    <h2>Our European presence</h2>
+    <p class="map-section__intro">Explore the key cities where Optixcom operates across Europe.</p>
+    <div id="coverageMap" class="map" role="application" aria-label="European map with Optixcom locations"></div>
+  </section>
 <!--  <div class="hero__media">-->
 <!--      <lottie-player src="/public/Red Network Globe.json" background="transparent" speed="1" loop autoplay></lottie-player>-->
 <!--  </div>-->
@@ -75,6 +81,7 @@
   </div>
   <div class="footer__legal">© <span id="y"></span> Optixcom. All rights reserved.</div>
 </footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
 <script src="/main.js" defer></script>
 </body>
 </html>
