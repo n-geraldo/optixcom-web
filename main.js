@@ -40,4 +40,28 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+
+  // Leaflet map of European locations
+  const mapEl = document.getElementById('coverageMap');
+  if (mapEl && window.L) {
+    const map = L.map(mapEl, {scrollWheelZoom: false});
+    const locations = [
+      {name: 'Tirana, Albania', coords: [41.3275, 19.8187], note: 'Head office'},
+      {name: 'Prishtina, Kosovo', coords: [42.6629, 21.1655]},
+      {name: 'Bulgaria', coords: [42.7339, 25.4858]},
+      {name: 'Slovenia', coords: [46.1512, 14.9955]},
+      {name: 'Frankfurt, Germany', coords: [50.1109, 8.6821]}
+    ];
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    const bounds = L.latLngBounds(locations.map((loc) => loc.coords));
+    locations.forEach((loc) => {
+      const content = `<strong>${loc.name}</strong>${loc.note ? `<br>${loc.note}` : ''}`;
+      L.marker(loc.coords).addTo(map).bindPopup(content);
+    });
+    map.fitBounds(bounds, {padding: [30, 30]});
+  }
 });
